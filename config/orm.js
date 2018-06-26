@@ -1,4 +1,4 @@
-const connection = require("./connection.js");
+const connection = require("../config/connection.js");
 
 
 //Method to display all burgers available for devouring selectAll()

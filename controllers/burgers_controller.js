@@ -7,13 +7,13 @@ const route = express.Router();
 const burger = require('../models/burgers.js');
 
 // Create all our routes and set up logic within those routes where required.
-route.get('/', function(req, res) {
-	burger.findAll(function(data){
+route.get("/", function(req, res) {
+	burger.all(function(data){
 		var burgerData = {
 			burgers: data
 		};
 		console.log(burgerData);
-		res.render('index', {burgerData});
+		res.render('index', burgerData);
 	})
 });
 
